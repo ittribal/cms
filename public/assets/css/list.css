@@ -1,0 +1,108 @@
+/* public/assets/css/list.css - 文章/分类/标签列表页特定样式 */
+
+.page-list {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.page-list-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-list-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.page-list-header h1 i {
+    color: var(--link-color);
+}
+
+.category-description, .tag-description {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    max-width: 700px;
+    margin: 0.5rem auto 0;
+    line-height: 1.5;
+}
+
+.article-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pagination-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.page-nav-btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.page-nav-btn:hover {
+    background-color: var(--link-color);
+    color: white;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.pagination-nav .page-info {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-list-header h1 {
+        font-size: 2rem;
+    }
+    .category-description, .tag-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    .article-list-grid {
+        grid-template-columns: 1fr;
+    }
+    .pagination-nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .page-nav-btn {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-list-header h1 {
+        font-size: 1.8rem;
+    }
+    .page-nav-btn {
+        width: 100%;
+        padding: 0.7rem 1rem;
+    }
+}

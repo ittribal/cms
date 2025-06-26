@@ -1,0 +1,498 @@
+/* public/assets/css/article.css - 文章详情页特定样式 */
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Main content + Sidebar */
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.article-detail {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 2.5rem;
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.breadcrumb a {
+    color: var(--text-color);
+}
+.breadcrumb a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.article-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.article-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    line-height: 1.2;
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+}
+
+.article-meta span i {
+    margin-right: 0.5rem;
+    color: var(--link-color);
+}
+
+.featured-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.article-excerpt {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-style: italic;
+    background-color: rgba(0,0,0,0.02);
+    border-left: 4px solid var(--link-color);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 2rem;
+}
+
+body[data-theme="dark"] .article-excerpt {
+    background-color: rgba(255,255,255,0.05);
+    border-left-color: var(--primary-color-dark);
+}
+
+.article-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* Basic content typography for CKEditor output */
+.article-content h1, .article-content h2, .article-content h3, .article-content h4, .article-content h5, .article-content h6 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.article-content h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.article-content p {
+    margin-bottom: 1.5rem;
+}
+
+.article-content ul, .article-content ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+}
+
+.article-content blockquote {
+    background-color: rgba(0,0,0,0.03);
+    border-left: 4px solid #f39c12;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+body[data-theme="dark"] .article-content blockquote {
+    background-color: rgba(255,255,255,0.05);
+    border-left-color: #f39c12; /* Keep same highlight color */
+}
+
+.article-content pre {
+    background-color: #2d3748; /* Dark background for code */
+    color: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+}
+
+.article-content code {
+    background-color: rgba(0,0,0,0.05);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #e53e3e;
+}
+body[data-theme="dark"] .article-content code {
+    background-color: rgba(255,255,255,0.08);
+    color: #fc8181;
+}
+
+.article-content pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+.article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.article-content th, .article-content td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.article-content th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+body[data-theme="dark"] .article-content th {
+    background-color: #4a5568;
+}
+
+/* Article Footer (for share buttons) */
+.article-footer {
+    padding-top: 2rem;
+    border-top: 1px dashed var(--border-color);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.share-btn i {
+    font-size: 1.2rem;
+}
+
+.share-btn.weibo { background-color: #e6162d; }
+.share-btn.wechat { background-color: #00c200; }
+.share-btn.qq { background-color: #1a94e6; }
+
+.share-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+/* Sidebar Widgets */
+.sidebar .widget {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar .widget h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.sidebar .widget h3 i {
+    margin-right: 0.5rem;
+    color: var(--link-color);
+}
+
+/* Table of Contents (TOC) */
+.table-of-contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+.table-of-contents ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.table-of-contents ul li a {
+    color: var(--text-color);
+    opacity: 0.8;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.table-of-contents ul li a:hover {
+    color: var(--link-color);
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Related Articles Widget */
+.article-list-small .article-item-small {
+    padding: 0.75rem 0;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.article-list-small .article-item-small:last-child {
+    border-bottom: none;
+}
+
+.article-list-small .article-title-small {
+    font-weight: 500;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.article-list-small .article-title-small:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.article-list-small .article-meta-small {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-top: 0.25rem;
+}
+
+/* Comments Section */
+.comments-section {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 2.5rem;
+    margin-top: 3rem;
+}
+
+.comments-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.comments-section h2 i {
+    margin-right: 0.8rem;
+    color: var(--link-color);
+}
+
+.comment-list {
+    margin-bottom: 2rem;
+}
+
+.comment-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.comment-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a0aec0; /* Neutral grey */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+    font-size: 1rem;
+}
+
+body[data-theme="dark"] .comment-avatar {
+    background-color: #4a5568;
+}
+
+.comment-content-wrapper {
+    flex-grow: 1;
+}
+
+.comment-author-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.comment-author-name strong {
+    font-weight: 600;
+}
+
+.comment-date {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-left: 0.5rem;
+}
+
+.comment-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.comment-form-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.comment-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.comment-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body[data-theme="dark"] .comment-form input,
+body[data-theme="dark"] .comment-form textarea {
+    background-color: var(--card-bg-color);
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    outline: none;
+    border-color: var(--link-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.comment-form .btn-primary {
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .article-container {
+        grid-template-columns: 1fr; /* Stack main content and sidebar */
+        gap: 2rem;
+    }
+    .article-detail, .comments-section, .sidebar .widget {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+    .article-title {
+        font-size: 2.2rem;
+    }
+    .featured-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 1.8rem;
+    }
+    .article-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    .share-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .share-btn {
+        width: 80%; /* Make share buttons wider */
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-detail, .comments-section {
+        padding: 1rem;
+    }
+    .article-title {
+        font-size: 1.5rem;
+    }
+    .featured-image {
+        height: 200px;
+    }
+    .article-meta span {
+        font-size: 0.8rem;
+    }
+    .article-excerpt {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    .article-content {
+        font-size: 0.95rem;
+    }
+    .comment-form .btn-primary {
+        width: 100%;
+    }
+}

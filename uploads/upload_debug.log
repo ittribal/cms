@@ -1,0 +1,147 @@
+=== DEBUG START ===
+Array
+(
+    [timestamp] => 2025-06-21 14:47:53
+    [method] => GET
+    [post_data] => Array
+        (
+        )
+
+    [files_data] => Array
+        (
+        )
+
+    [headers] => Array
+        (
+            [Cookie] => x-hng=lang=zh-CN&domain=10.10.10.99; wp-settings-time-1=1748672594; wp-settings-1=libraryContent%3Dbrowse%26editor%3Dhtml%26hidetb%3D1; 5d5871edf430c05aad05cf16be496605=f17bf754-bf64-484d-936a-11030f373415.BdRmj2gL6d_xwlFoujKXaVaekQ4; wordpress_test_cookie=WP%20Cookie%20check; wp_lang=zh_CN; 04bde8e3bf22f621b6c14b9d9f512c43=28f71fba-ad9b-4293-9c22-801904b25a16.usZHUa6ApmpBVntejENs2KJNTqk; http_SetName=; http_ChangePath=1; PHPSESSID=m84odga3hk1skt0ud0q5r63ksk; wordpress_logged_in_906582fa70accb1641f7921853a8cb61=xiao7%7C1751111395%7CgeeqlLkCu9XrBBws175fS68dgFskvXUaL63eqHIVqOE%7C3c96713e0d99b3aa46f75cdd6cc9fa843121f0c911954b96415b6f026eb8ae50; _zb_site_notify_auto=1; wordpress_logged_in_0e1e17e9892f02ad3ddcf15388b2a709=xiao7%7C1751163117%7C003J92sDDxjhZbxKibDE3e2zbuCdj64OtMUkl1jPXke%7C1f48b8f0f0bb740b5df2fdca9d6c0607ff3b2683b879430256e754d77c456234; CMS_SESSION=tnk5gkbacql7dogdl8jqoq5gke; 2b883c6090f24350876ba164b979bf6a=d355d3ad-ae55-40fb-a38b-22552ad711d5.q8fxS4wEiL9eyjemv2WTzqG7qKY; thinkphp_show_page_trace=0|0; think_var=zh-cn; a07dd60eba65dafed720a762615c0369=9e3d84f1-6030-4a5e-be53-7cba1fb28cd6.7FqdCFK-r8hFJQNZEQQzgfCEmUQ
+            [Accept-Language] => zh-CN,zh;q=0.9
+            [Accept-Encoding] => gzip, deflate
+            [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+            [Upgrade-Insecure-Requests] => 1
+            [Dnt] => 1
+            [Connection] => keep-alive
+            [Host] => 10.10.10.99:1100
+            [Content-Length] => 
+            [Content-Type] => 
+        )
+
+    [php_errors] => 
+)
+
+ERROR: Array
+(
+    [success] => 
+    [message] => 只支持POST请求
+    [error] => 只支持POST请求
+)
+
+FINAL OUTPUT: {"success":false,"message":"只支持POST请求","error":"只支持POST请求"}
+=== DEBUG END ===
+
+=== DEBUG START ===
+Array
+(
+    [timestamp] => 2025-06-21 14:48:12
+    [method] => POST
+    [post_data] => Array
+        (
+        )
+
+    [files_data] => Array
+        (
+            [upload] => Array
+                (
+                    [name] => image.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/php84OA2k
+                    [error] => 0
+                    [size] => 13720
+                )
+
+        )
+
+    [headers] => Array
+        (
+            [Cookie] => x-hng=lang=zh-CN&domain=10.10.10.99; wp-settings-time-1=1748672594; wp-settings-1=libraryContent%3Dbrowse%26editor%3Dhtml%26hidetb%3D1; 5d5871edf430c05aad05cf16be496605=f17bf754-bf64-484d-936a-11030f373415.BdRmj2gL6d_xwlFoujKXaVaekQ4; wordpress_test_cookie=WP%20Cookie%20check; wp_lang=zh_CN; 04bde8e3bf22f621b6c14b9d9f512c43=28f71fba-ad9b-4293-9c22-801904b25a16.usZHUa6ApmpBVntejENs2KJNTqk; http_SetName=; http_ChangePath=1; PHPSESSID=m84odga3hk1skt0ud0q5r63ksk; wordpress_logged_in_906582fa70accb1641f7921853a8cb61=xiao7%7C1751111395%7CgeeqlLkCu9XrBBws175fS68dgFskvXUaL63eqHIVqOE%7C3c96713e0d99b3aa46f75cdd6cc9fa843121f0c911954b96415b6f026eb8ae50; _zb_site_notify_auto=1; wordpress_logged_in_0e1e17e9892f02ad3ddcf15388b2a709=xiao7%7C1751163117%7C003J92sDDxjhZbxKibDE3e2zbuCdj64OtMUkl1jPXke%7C1f48b8f0f0bb740b5df2fdca9d6c0607ff3b2683b879430256e754d77c456234; CMS_SESSION=tnk5gkbacql7dogdl8jqoq5gke; 2b883c6090f24350876ba164b979bf6a=d355d3ad-ae55-40fb-a38b-22552ad711d5.q8fxS4wEiL9eyjemv2WTzqG7qKY; thinkphp_show_page_trace=0|0; think_var=zh-cn; a07dd60eba65dafed720a762615c0369=9e3d84f1-6030-4a5e-be53-7cba1fb28cd6.7FqdCFK-r8hFJQNZEQQzgfCEmUQ
+            [Accept-Language] => zh-CN,zh;q=0.9
+            [Accept-Encoding] => gzip, deflate
+            [Referer] => http://10.10.10.99:1100/admin/article_add.php
+            [Origin] => http://10.10.10.99:1100
+            [Accept] => */*
+            [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundaryMmXYWJrQJRymQFRK
+            [Dnt] => 1
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+            [Content-Length] => 13904
+            [Connection] => keep-alive
+            [Host] => 10.10.10.99:1100
+        )
+
+    [php_errors] => 
+)
+
+SUCCESS: Array
+(
+    [success] => 1
+    [url] => uploads/editor/img_1750488492_1291.png
+    [filename] => img_1750488492_1291.png
+    [size] => 13720
+    [message] => 上传成功
+)
+
+FINAL OUTPUT: {"success":true,"url":"uploads\/editor\/img_1750488492_1291.png","filename":"img_1750488492_1291.png","size":13720,"message":"上传成功"}
+=== DEBUG END ===
+
+=== DEBUG START ===
+Array
+(
+    [timestamp] => 2025-06-21 14:50:16
+    [method] => POST
+    [post_data] => Array
+        (
+        )
+
+    [files_data] => Array
+        (
+            [upload] => Array
+                (
+                    [name] => image.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpWYeAYM
+                    [error] => 0
+                    [size] => 15236
+                )
+
+        )
+
+    [headers] => Array
+        (
+            [Cookie] => x-hng=lang=zh-CN&domain=10.10.10.99; wp-settings-time-1=1748672594; wp-settings-1=libraryContent%3Dbrowse%26editor%3Dhtml%26hidetb%3D1; 5d5871edf430c05aad05cf16be496605=f17bf754-bf64-484d-936a-11030f373415.BdRmj2gL6d_xwlFoujKXaVaekQ4; wordpress_test_cookie=WP%20Cookie%20check; wp_lang=zh_CN; 04bde8e3bf22f621b6c14b9d9f512c43=28f71fba-ad9b-4293-9c22-801904b25a16.usZHUa6ApmpBVntejENs2KJNTqk; http_SetName=; http_ChangePath=1; PHPSESSID=m84odga3hk1skt0ud0q5r63ksk; wordpress_logged_in_906582fa70accb1641f7921853a8cb61=xiao7%7C1751111395%7CgeeqlLkCu9XrBBws175fS68dgFskvXUaL63eqHIVqOE%7C3c96713e0d99b3aa46f75cdd6cc9fa843121f0c911954b96415b6f026eb8ae50; _zb_site_notify_auto=1; wordpress_logged_in_0e1e17e9892f02ad3ddcf15388b2a709=xiao7%7C1751163117%7C003J92sDDxjhZbxKibDE3e2zbuCdj64OtMUkl1jPXke%7C1f48b8f0f0bb740b5df2fdca9d6c0607ff3b2683b879430256e754d77c456234; CMS_SESSION=tnk5gkbacql7dogdl8jqoq5gke; 2b883c6090f24350876ba164b979bf6a=d355d3ad-ae55-40fb-a38b-22552ad711d5.q8fxS4wEiL9eyjemv2WTzqG7qKY; thinkphp_show_page_trace=0|0; think_var=zh-cn; a07dd60eba65dafed720a762615c0369=9e3d84f1-6030-4a5e-be53-7cba1fb28cd6.7FqdCFK-r8hFJQNZEQQzgfCEmUQ
+            [Accept-Language] => zh-CN,zh;q=0.9
+            [Accept-Encoding] => gzip, deflate
+            [Referer] => http://10.10.10.99:1100/admin/article_add.php
+            [Origin] => http://10.10.10.99:1100
+            [Accept] => */*
+            [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundarymc04BALOzXFL4h2r
+            [Dnt] => 1
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+            [Content-Length] => 15420
+            [Connection] => keep-alive
+            [Host] => 10.10.10.99:1100
+        )
+
+    [php_errors] => 
+)
+
+SUCCESS: Array
+(
+    [success] => 1
+    [url] => uploads/editor/img_1750488616_6923.png
+    [filename] => img_1750488616_6923.png
+    [size] => 15236
+    [message] => 上传成功
+)
+
+FINAL OUTPUT: {"success":true,"url":"uploads\/editor\/img_1750488616_6923.png","filename":"img_1750488616_6923.png","size":15236,"message":"上传成功"}
+=== DEBUG END ===
+
