@@ -1,0 +1,452 @@
+/* 系统设置专用样式 */
+.settings-page .settings-nav {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+}
+
+.settings-page .nav-tab {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #dee2e6;
+    background: #f8f9fa;
+    color: #6c757d;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.settings-page .nav-tab:hover {
+    background: #e9ecef;
+    color: #495057;
+    transform: translateY(-1px);
+}
+
+.settings-page .nav-tab.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.settings-page .tab-content {
+    display: none;
+}
+
+.settings-page .tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.settings-page .settings-form {
+    padding: 2rem;
+}
+
+.settings-page .form-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.settings-page .form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.settings-page .form-section h4 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.settings-page .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.settings-page .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #495057;
+}
+
+.settings-page .checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #3498db;
+}
+
+.settings-page .settings-placeholder {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #6c757d;
+}
+
+.settings-page .settings-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.settings-page .settings-placeholder p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.settings-page .form-actions {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.settings-page .w-100 {
+    width: 100%;
+}
+
+/* 状态指示器 */
+.settings-page .status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.settings-page .status-connected {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.settings-page .status-disconnected {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.settings-page .status-testing {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+/* 设置卡片 */
+.settings-page .setting-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #3498db;
+}
+
+.settings-page .setting-card h5 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.settings-page .setting-card p {
+    color: #6c757d;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* 危险操作区域 */
+.settings-page .danger-zone {
+    background: #fff5f5;
+    border: 1px solid #fed7d7;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.settings-page .danger-zone h4 {
+    color: #e53e3e;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.settings-page .danger-zone p {
+    color: #744210;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.settings-page .danger-zone .btn {
+    background: #e53e3e;
+    border-color: #e53e3e;
+    color: white;
+}
+
+.settings-page .danger-zone .btn:hover {
+    background: #c53030;
+    border-color: #c53030;
+}
+
+/* 预览框 */
+.settings-page .preview-box {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.settings-page .preview-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.settings-page .preview-content {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* 代码输入框 */
+.settings-page .code-editor {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    background: #2d3748;
+    color: #e2e8f0;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    resize: vertical;
+    min-height: 120px;
+}
+
+.settings-page .code-editor:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* 帮助文本 */
+.settings-page .help-text {
+    background: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.settings-page .help-text i {
+    color: #2196f3;
+    margin-right: 0.5rem;
+}
+
+.settings-page .help-text p {
+    margin: 0;
+    color: #1565c0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* 进度条 */
+.settings-page .progress-container {
+    margin: 1rem 0;
+}
+
+.settings-page .progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.settings-page .progress-fill {
+    height: 100%;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+/* 统计网格 */
+.settings-page .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.settings-page .stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.settings-page .stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.settings-page .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.settings-page .stat-content {
+    flex: 1;
+}
+
+.settings-page .stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    line-height: 1;
+}
+
+.settings-page .stat-label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* 切换开关 */
+.settings-page .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.settings-page .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.settings-page .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.settings-page .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.settings-page .toggle-switch input:checked + .toggle-slider {
+    background-color: #3498db;
+}
+
+.settings-page .toggle-switch input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+}
+
+/* 标签页面板 */
+.settings-page .tab-panel {
+    background: white;
+    border-radius: 0 10px 10px 10px;
+    min-height: 500px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .settings-page .settings-nav {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .settings-page .nav-tab {
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .settings-page .settings-form {
+        padding: 1.5rem 1rem;
+    }
+    
+    .settings-page .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .settings-page .form-actions {
+        flex-direction: column;
+    }
+    
+    .settings-page .form-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .settings-page .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .settings-page .checkbox-group {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-page .stat-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .settings-page .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .settings-page .stat-number {
+        font-size: 1.5rem;
+    }
+}

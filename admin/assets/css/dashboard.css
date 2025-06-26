@@ -1,0 +1,57 @@
+/* admin/assets/css/dashboard.css - 仪表盘测试样式 */
+
+/* 这是一个测试样式，如果能看到，说明dashboard.css文件加载成功 */
+body {
+    background-color: #f0f8ff !important; /* 非常浅的蓝色 */
+}
+
+/* 仪表盘内容的背景色，如果能变成这个颜色，说明CSS已应用 */
+.main-content {
+    background-color: #e6ffe6 !important; /* 非常浅的绿色 */
+    padding: 20px; /* 增加内边距，看看是否生效 */
+    border: 5px solid red !important; /* 明显的红色边框 */
+    box-sizing: border-box;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    background-color: #ffe0e0 !important; /* 浅红色 */
+    padding: 10px;
+}
+
+.stat-card {
+    background-color: #ffffcc !important; /* 浅黄色 */
+    border: 2px dashed blue !important; /* 蓝色虚线框 */
+    padding: 15px;
+    text-align: center;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    background-color: #e0e0ff !important; /* 浅紫色 */
+    padding: 20px;
+}
+
+.content-section {
+    background-color: #ccffff !important; /* 浅青色 */
+    border: 1px solid green !important; /* 绿色边框 */
+    padding: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333 !important; /* 深灰色文本 */
+}
+
+p, span, div {
+    color: #555555 !important; /* 较浅灰色文本 */
+}
+
+/* 其他一些通用元素，看看是否能被覆盖 */
+.page-header {
+    background-color: #ffcccc !important; /* 浅粉色 */
+    padding: 10px;
+}
